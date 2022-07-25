@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.again {
+  padding: 10px 2rem;
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.again:hover {
+  background-color: rgb(31, 27, 27);
+  color: white;
+  transform: scale(1.008);
+}
+
+.between {
+  background-color: black;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.win {
+  background-color: black;
+  color: whitesmoke;
+  padding: 0 10px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 6px black;
+}
+
+header {
+  position: relative;
+}
+
+.win-number {
+  position: absolute;
+  background-color: black;
+  text-align: center;
+  padding: 2rem 3rem;
+  left: 51%;
+  margin-top: 3rem;
+  transform: translate(-50%, 50%);
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 7rem;
+  border-radius: 3px;
+}
+
+main {
+  display: flex;
+  margin-top: 17rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6rem 0;
+  background-color: black;
+  color: white;
+}
+
+.left-conta {
+  display: flex;
+  flex-direction: column;
+}
+
+.guess-number {
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  font-size: 3.5rem;
+  width: 25%;
+  display: block;
+  font-weight: bold;
+  margin: auto;
+}
+
+.play {
+  width: 20%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 8px 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px rgb(24, 20, 20);
+}
+
+.right-conta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.right-conta .score {
+  margin-top: 2rem;
+}
+
+.right-conta .message {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.highscore {
+  margin-top: 1rem;
+}
+
+.right-conta p {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1054px) {
+  .guess-number {
+    font-size: 3rem;
+  }
+
+  .left-conta {
+    flex: 30%;
+  }
+}
+
+@media (max-width: 765px) {
+  .left-conta {
+    flex: 30%;
+  }
+}
+
+@media (max-width: 640px) {
+  .left-conta {
+    flex: 50%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .right-conta {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .play {
+    width: 48%;
+  }
+}
